@@ -18,8 +18,10 @@
 <div class="container d-flex flex-column align-items-center justify-content-center gap-4">
     <img src="../imagens/logo/logo-integrado.png" style="width: 200px" alt="logo-integrado">
     <div class="container d-flex flex-column align-items-center justify-content-center">
-        <button type="button" class="btn btn-primary btn-lg">Ver cursos</button>
-        <a href="matriculas.php" class="btn btn-link">Minhas matrículas</a>
+        <a class="btn btn-primary btn-lg" href="catalogo.php" role="button">Ver cursos</a>
+        <?php
+        include "../components/botao-minhas-matriculas.php";
+        ?>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
