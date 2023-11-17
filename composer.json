@@ -1,0 +1,23 @@
+{
+    "name": "h-lau/seletiva-integrado",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "phpunit/phpunit": "^10.4"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "HLau\\SeletivaIntegrado\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oreo",
+            "email": "henrique.souza@grupointegrado.br"
+        }
+    ]
+}
