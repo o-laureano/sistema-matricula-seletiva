@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'h-lau/seletiva-integrado',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '5be46b3ab24ef1ee5f428fedf925cdd17a885538',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'h-lau/seletiva-integrado' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '5be46b3ab24ef1ee5f428fedf925cdd17a885538',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
