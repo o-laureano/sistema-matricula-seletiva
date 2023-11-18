@@ -18,9 +18,9 @@
 <div class="container d-flex flex-column align-items-center justify-content-center gap-4">
     <img src="../imagens/logo/logo-integrado.png" style="width: 200px" alt="logo-integrado">
     <div class="container d-flex flex-column align-items-center justify-content-center">
-        <a class="btn btn-primary btn-lg" href="catalogo.php" role="button">Ver cursos</a>
         <?php
-        include "../components/botao-minhas-matriculas.php";
+        include "../components/botoes/botao-ver-cursos.php";
+        include "../components/botoes/botao-minhas-matriculas.php";
         ?>
     </div>
 </div>

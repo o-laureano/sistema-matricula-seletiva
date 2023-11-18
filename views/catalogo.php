@@ -16,45 +16,54 @@
     <div class="container d-flex flex-column align-items-center justify-content-center gap-0">
         <img src="../imagens/logo/logo-integrado.png" style="width: 200px" alt="logo-integrado">
         <?php
-        include "../components/botao-minhas-matriculas.php";
+        include "../components/botoes/botao-minhas-matriculas.php";
         ?>
     </div>
     <div class="container d-flex flex-column align-items-center bg-dark rounded-top-4 pt-4 m-0 gap-4" style="height: 100vh">
         <div class="d-flex flex-column align-items-center justify-content-center">
             <p class="fs-5 text-white">Escolha o nível</p>
             <div class="d-flex align-items-center gap-2">
-                <div>
-                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
-                    <label class="btn btn-outline-success" for="success-outlined">Graduação</label>
-                </div>
-                <div>
-                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
-                    <label class="btn btn-outline-danger" for="danger-outlined">Pós-graduação</label>
-                </div>
+                <?php
+                include "../components/botoes/botao-graduacao.php";
+                include "../components/botoes/botao-pos-graduacao.php";
+                ?>
             </div>
         </div>
         <div class="d-flex flex-column align-items-center justify-content-center">
             <p class="fs-5 text-white">Escolha a modalidade de estudo</p>
             <div class="d-flex align-items-center gap-2">
-                <div>
-                    <input type="checkbox" class="btn-check" id="presencial-check" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="presencial-check">Presencial</label><br>
-                </div>
-                <div>
-                    <input type="checkbox" class="btn-check" id="semipresencial-check" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="semipresencial-check">Semipresencial</label><br>
-                </div>
-                <div>
-                    <input type="checkbox" class="btn-check" id="ead-check" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="ead-check">EAD</label><br>
-                </div>
+                <?php
+                include "../components/botoes/botao-modalidade.php";
+                ?>
             </div>
         </div>
         <div class="d-flex flex-column align-items-center justify-content-center">
             <p class="fs-5 text-white">Busque pelo seu curso</p>
             <div class="input-group">
-                <input type="search" class="form-control rounded" placeholder="Digite o nome do curso" aria-label="Search" aria-describedby="search-addon" />
-                <button type="button" class="btn btn-outline-primary">Buscar</button>
+                <?php
+                include "../components/inputs/input-busca.php";
+                ?>
+            </div>
+        </div>
+        <div class="d-flex card mb-3" style="max-width: 540px;">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="../imagens/cursos/ADS.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Análise e Desenvolvimento de Sistemas</h5>
+                            <p class="card-text"><small class="text-body-secondary">Disponível nas modalidades: Presencial | Semipresencial | EAD</small></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <div>
+                                <p class="card-text">Investimento: R$757,50 40%OFF</p>
+                                <a class="btn btn-primary btn-sm" href="catalogo.php" role="button">Ver cursos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
