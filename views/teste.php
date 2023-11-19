@@ -23,25 +23,25 @@ $cursos=ConexaoBD();
 </div>
 <div class="d-flex flex-column justify-content-center">
     <?php foreach ($cursos as $curso): ?>
-        <div class="d-flex justify-content-center">
-            <p style="color: white"><?php echo $curso['duracao']; ?> anos</p>
-            <p style="color: white">Tecnólogo</p>
-        </div>
-        <div class="d-flex flex-column">
-            <p style="color: white"><?php echo $curso['nome']; ?></p>
-            <p style="color: white"><?php echo $curso['descricao']; ?></p>
-        </div>
-        <div class="d-flex flex-column">
-            <p style="color: white">Investimento:</p>
-            <p style="color: white"> R$ <?php echo $curso['valor_parcela']; ?> </p>
-        </div>
-        <div class="d-flex flex-column justify-content-center">
-            <?php
-            include "../components/botoes/botao-fazer-matricula.php";
-            include "../components/botoes/botao-minhas-matriculas.php";
-            ?>
-        </div>
-    <?php endforeach; ?>
+    <div class="d-flex justify-content-center">
+        <p style="color: white"><?php echo $curso['duracao']; ?> anos</p>
+        <p style="color: white">Tecnólogo</p>
+    </div>
+    <div class="d-flex flex-column">
+        <p style="color: white"><?php echo $curso['nome']; ?></p>
+        <p style="color: white"><?php echo $curso['descricao']; ?></p>
+    </div>
+    <div class="d-flex flex-column">
+        <p style="color: white">Investimento:</p>
+        <p style="color: white"> R$ <?php echo $curso['valor_parcela']; ?> </p>
+    </div>
+    <div class="d-flex flex-column justify-content-center">
+        <?php
+        include "../components/botoes/botao-fazer-matricula.php";
+    include "../components/botoes/botao-minhas-matriculas.php";
+    ?>
+</div>
+<?php endforeach; ?>
 </div>
 </body>
 </html>

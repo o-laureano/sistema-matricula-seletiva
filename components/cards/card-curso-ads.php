@@ -12,7 +12,7 @@ echo
                 <p class="card-text p-0 m-0 lh-1 text-white" style="font-size: 12px; font-weight: normal">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <p class="card-text p-0 m-0 text-white" style="font-size: 14px">Investimento: <strong>R$757,50</strong</p>
-                    <a class="btn btn-primary btn-sm" href="curso.php" role="button">Ver cursos</a>
+                    <a class="btn btn-primary btn-sm" href="curso-ads.php" role="button">Ver cursos</a>
                 </div>
             </div>
         </div>
