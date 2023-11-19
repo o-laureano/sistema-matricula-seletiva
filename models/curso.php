@@ -1,84 +1,92 @@
 <?php
 
 class Curso {
-    private $idCurso;
+    private $id_curso;
     private $descricao;
-    private $idCursoModalidade;
-    private $idCursoNivel;
-    private $valorParcela;
-    private $quantidadeParcelas;
-    private $valorTotal;
+    private $id_curso_modalidade;
+    private $id_curso_nivel;
+    private $valor_parcela;
+    private $quantidade_parcelas;
+    private $valor_total;
     private $classificacao;
     private $duracao;
-    private $idCursoTipo;
+    private $id_curso_tipo;
     private $imagem;
+    private $nome;
 
     public function __construct(
+        $id_curso,
         $descricao,
-        $idCursoModalidade,
-        $idCursoNivel,
-        $valorParcela,
-        $quantidadeParcelas,
-        $valorTotal,
+        $id_curso_modalidade,
+        $id_curso_nivel,
+        $valor_parcela,
+        $quantidade_parcelas,
+        $valor_total,
         $classificacao,
         $duracao,
-        $idCursoTipo,
-        $imagem
+        $id_curso_tipo,
+        $imagem,
+        $nome
     ) {
+        $this->id_curso = $id_curso;
         $this->descricao = $descricao;
-        $this->idCursoModalidade = $idCursoModalidade;
-        $this->idCursoNivel = $idCursoNivel;
-        $this->valorParcela = $valorParcela;
-        $this->quantidadeParcelas = $quantidadeParcelas;
-        $this->valorTotal = $valorTotal;
+        $this->id_curso_modalidade = $id_curso_modalidade;
+        $this->id_curso_nivel = $id_curso_nivel;
+        $this->valor_parcela = $valor_parcela;
+        $this->quantidade_parcelas = $quantidade_parcelas;
+        $this->valor_total = $valor_total;
         $this->classificacao = $classificacao;
         $this->duracao = $duracao;
-        $this->idCursoTipo = $idCursoTipo;
+        $this->id_curso_tipo = $id_curso_tipo;
         $this->imagem = $imagem;
+        $this->nome = $nome;
     }
 
-    // Getters
-    public function getIdCurso() {
-        return $this->idCurso;
-    }
+     public function getIdCurso() {
+            return $this->id_curso;
+        }
 
-    public function getDescricao() {
-        return $this->descricao;
-    }
+        public function getDescricao() {
+            return $this->descricao;
+        }
 
-    public function getIdCursoModalidade() {
-        return $this->idCursoModalidade;
-    }
+        public function getIdCursoModalidade() {
+            return $this->id_curso_modalidade;
+        }
 
-    public function getIdCursoNivel() {
-        return $this->idCursoNivel;
-    }
+        public function getIdCursoNivel() {
+            return $this->id_curso_nivel;
+        }
 
-    public function getValorParcela() {
-        return $this->valorParcela;
-    }
+        public function getValorParcela() {
+            return $this->valor_parcela;
+        }
 
-    public function getQuantidadeParcelas() {
-        return $this->quantidadeParcelas;
-    }
+        public function getQuantidadeParcelas() {
+            return $this->quantidade_parcelas;
+        }
 
-    public function getValorTotal() {
-        return $this->valorTotal;
-    }
+        public function getValorTotal() {
+            return $this->valor_total;
+        }
 
-    public function getClassificacao() {
-        return $this->classificacao;
-    }
+        public function getClassificacao() {
+            return $this->classificacao;
+        }
 
-    public function getDuracao() {
-        return $this->duracao;
-    }
+        public function getDuracao() {
+            return $this->duracao;
+        }
 
-    public function getIdCursoTipo() {
-        return $this->idCursoTipo;
-    }
+        public function getIdCursoTipo() {
+            return $this->id_curso_tipo;
+        }
 
-    public function getImagem() {
-        return $this->imagem;
+        public function getImagem() {
+            return $this->imagem;
+        }
+
+        public function getNome() {
+            return $this->nome;
+        }
     }
-}

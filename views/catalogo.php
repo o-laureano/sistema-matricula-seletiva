@@ -48,8 +48,6 @@
         <div class="d-flex card mb-3" style="max-width: 540px; background-color: transparent">
             <?php
             include "../components/cards/card-curso.php";
-            include "../components/cards/card-curso.php";
-            include "../components/cards/card-curso.php";
             ?>
         </div>
     </div>

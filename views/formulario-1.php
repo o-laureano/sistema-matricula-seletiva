@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body class="d-flex flex-column justify-content-center align-items-center bg-dark text-white">
     <form class="d-flex flex-column align-items-center px-3 ">

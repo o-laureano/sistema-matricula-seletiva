@@ -1,37 +1,37 @@
-<!doctype html>
+<?php
+require_once '..\models\ConexaoBancoDeDados.php';
+require_once '..\models\curso.php';
+
+$bancoDeDados = new ConexaoBancoDeDados('localhost', 'sistema_matricula', 'root', '');
+
+$idCurso = 1;
+$sql = "SELECT * FROM curso WHERE id_curso = $idCurso";
+
+$resultados = $bancoDeDados->consultaDados($sql);
+
+foreach ($resultados as $resultado) {
+    $curso = new Curso();
+    $curso->populate($resultado);
+}
+
+$bancoDeDados->fecharConexao();
+?>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Matricule-se já!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Curso</title>
+    <!-- Seus estilos CSS e outros cabeçalhos aqui -->
 </head>
 <body>
-
-<?php
-// Incluir suas classes e lógica para obter dados do banco de dados aqui
-require_once '..\models\aluno.php';
-require_once '..\models\curso.php';
-
-// Criar instância de Aluno (substitua esses valores pelos reais)
-$aluno = new Aluno("Nome do Aluno", "email@example.com", "123456789", "12345678901", "12345678", "1990-01-01", "caminho_documento");
-
-// Criar instância de Curso (substitua esses valores pelos reais)
-$curso = new Curso("Descrição do Curso", 1, 1, 1000.00, 12, 12000.00, "Classificação", 24, 1, "caminho_imagem");
-?>
-
-<!-- Exibir detalhes do Aluno -->
-<h2>Detalhes do Aluno:</h2>
-<p>Nome: <?php echo $aluno->getNome(); ?></p>
-<p>Email: <?php echo $aluno->getEmail(); ?></p>
-<!-- Adicione outros detalhes do aluno conforme necessário -->
-
-<!-- Exibir detalhes do Curso -->
-<h2>Detalhes do Curso:</h2>
-<p>Descrição: <?php echo $curso->getDescricao(); ?></p>
-<p>Valor da Parcela: <?php echo $curso->getValorParcela(); ?></p>
-<!-- Adicione outros detalhes do curso conforme necessário -->
-
+<!-- Seu conteúdo HTML aqui -->
+<div>
+    <h1>Detalhes do Curso</h1>
+    <p>ID do Curso: <?= $curso->getIdCurso() ?></p>
+    <p>Descrição: <?= $curso->getDescricao() ?></p>
+    <!-- Adicionar outras informações do curso aqui -->
+</div>
+<!-- Seus scripts JavaScript e outros elementos do corpo aqui -->
 </body>
 </html>

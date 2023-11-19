@@ -20,7 +20,6 @@
             <p style="text-align: center">Só precisamos da foto, frente e verso, de algum documento de identificação. que pertença à você. Pode ser RG, CPF ou CNH.</p>
         </div>
         <div class="mb-3">
-            <label for="formFileSm" class="form-label">Small file input example</label>
             <input class="form-control form-control-sm" id="formFileSm" type="file">
         </div>
         <?php

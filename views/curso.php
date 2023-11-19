@@ -13,21 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body class="d-flex flex-column align-items-center justify-content-center bg-dark">
+<?php
+require_once '..\models\curso.php';
+
+$curso = new Curso(1," Nulla volutpat imperdiet semper. Integer fringilla nec tortor nec porttitor. Nulla scelerisque nunc a lacus dignissim pulvinar. Praesent vitae bibendum sapien. Aliquam elementum sit amet lacus vel sagittis.", 1, 2, 757.90, 12, 12000, "Tecnologias", 2.5, 2, "../imagens/cursos/ADS.png", "Análise e Desenvolvimento de Sistemas");
+?>
     <div>
         <img src="../imagens/cursos/ADS.png" alt="" style="width: 100%; top: 0; left: 0; position: fixed; max-height: 176px; object-fit: cover">
     </div>
     <div class="d-flex flex-column justify-content-center">
         <div class="d-flex justify-content-center">
-            <p style="color: white">2.5 anos</p>
+            <p style="color: white"><?= $curso->getNome() . " anos" ?></p>
             <p style="color: white">Tecnólogo</p>
         </div>
         <div class="d-flex flex-column">
-            <p style="color: white">Análise e Desenvolvimento de Sistemas</p>
-            <p style="color: white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p style="color: white"><?= $curso->getNome() ?></p>
+            <p style="color: white"><?= $curso->getDescricao() ?></p>
         </div>
         <div class="d-flex flex-column">
             <p style="color: white">Investimento:</p>
-            <p style="color: white">R$ 757.90</p>
+            <p style="color: white"><?= "R$ " . $curso->getValorParcela() ?></p>
         </div>
         <div class="d-flex flex-column justify-content-center">
             <?php
@@ -36,6 +41,5 @@
             ?>
         </div>
     </div>
-
 </body>
 </html>
