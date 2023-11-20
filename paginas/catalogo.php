@@ -19,11 +19,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body class="d-flex flex-column gap-3 pt-4">
-    <div class="container d-flex flex-column align-items-center justify-content-center gap-0">
-        <img src="../imagens/logo/logo-integrado.png" alt="logo-integrado" style="width: 200px">
+    <div class="container d-flex align-items-center justify-content-around align-items-center">
+        <img src="../imagens/logo/logo-integrado.png" alt="logo-integrado" style="width: 100px">
         <?php
-        include "../components/botoes/botao-minhas-matriculas.php";
+        include "../components/navbar.php";
         ?>
+
     </div>
     <div class="container-fluid d-flex flex-column align-items-center bg-dark rounded-top-4 pt-4 gap-4" style="height: 100vh; overflow-y: auto;">
         <div class="d-flex flex-column align-items-center justify-content-center">
@@ -62,5 +63,7 @@
             ?>
         </div>
     </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

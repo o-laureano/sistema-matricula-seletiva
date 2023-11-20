@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body class="d-flex flex-column align-items-center justify-content-center">
+<?php
+include "../components/navbar.php";
+?>
 
 <p>Processo seletivo - TI Integrado</p>
 <div class="container d-flex flex-column align-items-center justify-content-center gap-4">
@@ -20,7 +23,6 @@
     <div class="container d-flex flex-column align-items-center justify-content-center">
         <?php
         include "../components/botoes/botao-ver-cursos.php";
-        include "../components/botoes/botao-minhas-matriculas.php";
         ?>
     </div>
 </div>

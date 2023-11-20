@@ -47,7 +47,8 @@ $id_aluno = isset($_GET['id_aluno']) ? $_GET['id_aluno'] : null;
     </script>
 </head>
 <body class="d-flex flex-column justify-content-center align-items-center bg-dark text-white">
-    <form class="d-flex flex-column align-items-center px-3" method="POST" onsubmit="return validarFormulario2();">
+    <?php include "../components/navbar.php"; ?>
+    <form class="d-flex flex-column align-items-center px-3 mt-3" method="POST" onsubmit="return validarFormulario2();">
         <div class="d-flex flex-column align-items-center mb-3">
             <h3 style="font-weight: bold">Maravilha! Só mais algumas...</h3>
             <p style="text-align: center; font-weight: lighter; line-height: normal ">Nos passe mais essas informações para podermos dar prosseguimento em sua matrícula</p>
@@ -68,6 +69,8 @@ $id_aluno = isset($_GET['id_aluno']) ? $_GET['id_aluno'] : null;
         include "../components/botoes/botao-enviar-forms.php";
         ?>
     </form>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>

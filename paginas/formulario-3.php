@@ -43,7 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body class="d-flex flex-column justify-content-center align-items-center bg-dark text-white">
-    <form class="d-flex flex-column align-items-center px-3" enctype="multipart/form-data">
+    <?php include "../components/navbar.php"; ?>
+    <form class="d-flex flex-column align-items-center px-3 mt-3" enctype="multipart/form-data">
         <div class="d-flex flex-column align-items-center">
             <h3 style="font-weight: bold">Só mais um passo!</h3>
             <p style="text-align: center; font-weight: lighter; line-height: normal " >Só precisamos da foto, frente e verso, de algum documento de identificação. que pertença à você. Pode ser RG, CPF ou CNH.</p>
@@ -55,5 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         include "../components/botoes/botao-enviar-forms.php";
         ?>
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
