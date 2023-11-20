@@ -1,4 +1,5 @@
-<?php include ('..\models\ConexaoBD.php');
+curso-tech.php<?php
+include('..\funcoes\ConexaoBD.php');
 $cursos=ConexaoBD();
 ?>
 

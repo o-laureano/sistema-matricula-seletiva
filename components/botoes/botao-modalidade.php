@@ -3,7 +3,7 @@ $presencial = "Presencial";
 $semipresencial = "Semipresencial";
 $ead = "EAD";
 
-$checkboxes = [
+$modalidades = [
     [
         "id" => "presencial-check",
         "label" => $presencial,
@@ -18,8 +18,8 @@ $checkboxes = [
     ],
 ];
 
-foreach ($checkboxes as $checkbox) {
-    echo '<input type="checkbox" class="btn-check" id="' . $checkbox["id"] . '" autocomplete="off">
-  <label class="btn btn-outline-primary" for="' . $checkbox["id"] . '">' . $checkbox["label"] . '</label><br>';
+foreach ($modalidades as $modalidade) {
+    echo '<input type="checkbox" class="btn-check" id="' . $modalidade["id"] . '" autocomplete="off">
+  <label class="btn btn-outline-primary" for="' . $modalidade["id"] . '">' . $modalidade["label"] . '</label><br>';
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
 
-echo '<a href="../../views/curso-ads.php" class="btn btn-link">Minhas matrículas</a>';
+echo '<a href="../../paginas/curso-tech.php" class="btn btn-link">Minhas matrículas</a>';
 
 ?>

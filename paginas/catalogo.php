@@ -1,3 +1,9 @@
+<?php
+
+
+
+?>
+
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -19,7 +25,7 @@
         include "../components/botoes/botao-minhas-matriculas.php";
         ?>
     </div>
-    <div class="container d-flex flex-column align-items-center bg-dark rounded-top-4 pt-4 m-0 gap-4" style="height: 100vh">
+    <div class="container-fluid d-flex flex-column align-items-center bg-dark rounded-top-4 pt-4 gap-4" style="height: 100vh; overflow-y: auto;">
         <div class="d-flex flex-column align-items-center justify-content-center">
             <p class="fs-6 text-white">Escolha o nível</p>
             <div class="d-flex align-items-center gap-2">
@@ -45,9 +51,14 @@
                 ?>
             </div>
         </div>
-        <div class="d-flex card mb-3" style="max-width: 540px; background-color: transparent">
+        <div class="d-flex card mb-3 border-0" style="max-width: 540px; background-color: transparent">
             <?php
-            include "../components/cards/card-curso-ads.php";
+//            include "../components/cards/card-curso-teste.php";
+            include "../components/cards/card-curso-tech.php";
+            include "../components/cards/card-curso-saude.php";
+            include "../components/cards/card-curso-humanas.php";
+            include "../components/cards/card-curso-gestao.php";
+            include "../components/cards/card-curso-engenharia.php";
             ?>
         </div>
     </div>
