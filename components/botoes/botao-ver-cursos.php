@@ -1,5 +1,5 @@
 <?php
-
-echo '<a class="btn btn-primary btn-lg" href="catalogo.php" role="button">Ver cursos</a>';
+/*Formação do echo que chama o botão*/
+echo '<a class="btn btn-primary" href="catalogo.php" role="button">Ver cursos</a>';
 
 ?>

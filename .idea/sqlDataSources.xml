@@ -8,4 +8,19 @@
       </scope>
     </mapping>
   </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="62da6eeb-146d-47aa-a8d0-a37be37d5b46" />
+          <option name="name" value="sistema_matricula (DDL)" />
+          <option name="dbmsName" value="MARIADB" />
+          <option name="urls">
+            <array />
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
 </project>
