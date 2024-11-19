@@ -42,7 +42,7 @@ Certifique-se de ter os seguintes requisitos instalados em sua máquina:
 ### Como Testar
 1.  ### Clonar o Repositório:
 
-        git clone https://github.com/seu-usuario/seu-repositorio.git
+        git clone https://github.com/o-laureano/sistema-matricula-seletiva.git
 
 2.  ### Instalar Dependências com o Composer:
 
